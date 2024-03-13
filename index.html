@@ -92,4 +92,20 @@
     </tr>
 </table>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all anchor tags on the page
+        var links = document.getElementsByTagName('a');
+
+        // Loop through all the anchor tags
+        for (var i = 0; i < links.length; i++) {
+            // Add target="_blank" to each link
+            links[i].target = '_blank';
+            links[i].rel = 'noopener noreferrer';
+        }
+    });
+</script>
+
+
 </html>
