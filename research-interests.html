@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Research Interests</title>
+    <link rel="shortcut icon" href="images/favicon/play.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        // Set your video ID here
+        const videoId = "dLvan03R1ek";
+    </script>
+</head>
+<body>
+    <div class="video-video-container">
+        <h2 class="name">My Research Interests</h2>
+        <!--<p>Check out the video below:</p>-->
+        <div class="video-container">
+            <!-- Placeholder iframe -->
+            <iframe id="video-frame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>
+            If the video doesn’t load,
+            <a id="youtube-link" target="_blank">click here to view it on YouTube</a>.
+        </p>
+        <p><a href="index.html">Go back to the homepage</a></p>
+    </div>
+
+    <script>
+        // Dynamically set the iframe and link
+        const iframe = document.getElementById('video-frame');
+        const youtubeLink = document.getElementById('youtube-link');
+
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        youtubeLink.href = `https://www.youtube.com/watch?v=${videoId}`;
+    </script>
+</body>
+</html>

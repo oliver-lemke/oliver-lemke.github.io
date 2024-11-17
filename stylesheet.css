@@ -133,3 +133,34 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    width: 100%; /* Take up the full width of the parent container */
+    overflow: hidden;
+    max-width: 1400px; /* Allow larger videos on wide screens */
+    background-color: #000;
+    margin: 10px auto; /* Add space above and below, center horizontally */
+    border-radius: 8px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.video-video-container {
+    text-align: center;
+    max-width: 75%; /* Allow the container to expand slightly */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+}
