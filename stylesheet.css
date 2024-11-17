@@ -133,15 +133,15 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
-    width: 100%; /* Take up the full width of the parent container */
+    width: 100%; /* Full width of the parent container */
+    max-width: 75%; /* Scale down to fit within the screen */
+    aspect-ratio: 16 / 9; /* Force 16:9 aspect ratio */
     overflow: hidden;
-    max-width: 1400px; /* Allow larger videos on wide screens */
-    background-color: #000;
-    margin: 10px auto; /* Add space above and below, center horizontally */
+    background-color: #000; /* Fallback black background */
+    margin: 20px auto; /* Center the container with spacing */
     border-radius: 8px;
 }
 
@@ -149,18 +149,19 @@ span.highlight {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Fill the container width */
+    height: 100%; /* Fill the container height */
     border: none;
-    border-radius: 8px;
+    border-radius: 8px; /* Match the container's rounded corners */
 }
 
-.video-video-container {
+.video-card {
     text-align: center;
-    max-width: 75%; /* Allow the container to expand slightly */
+    width: 100%; /* Ensure the card scales with the container */
+    max-width: 75%; /* Scale down to fit the viewport */
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin: 20px auto;
+    background-color: #fff; /* White background for the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow for better visual impact */
+    border-radius: 8px; /* Rounded corners for the card */
+    margin: 20px auto; /* Center the card */
 }
